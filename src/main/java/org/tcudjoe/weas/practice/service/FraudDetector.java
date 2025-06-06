@@ -1,9 +1,8 @@
-package org.tcudjoe.weasPractice.service;
+package org.tcudjoe.weas.practice.service;
 
-import org.tcudjoe.weasPractice.model.CustomerDataKey;
-import org.tcudjoe.weasPractice.model.Transaction;
+import org.tcudjoe.weas.practice.model.CustomerDataKey;
+import org.tcudjoe.weas.practice.model.Transaction;
 
-import java.time.LocalDate;
 import java.util.*;
 
 /**

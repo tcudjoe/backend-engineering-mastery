@@ -1,4 +1,4 @@
-package org.tcudjoe.weasPractice.model;
+package org.tcudjoe.weas.practice.model;
 
 import java.time.LocalDate;
 

@@ -1,12 +1,12 @@
 package org.tcudjoe;
 
-import org.tcudjoe.weasPractice.model.Transaction;
+import org.tcudjoe.weas.practice.model.Transaction;
 
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.tcudjoe.weasPractice.service.FraudDetector.findLimitViolators;
+import static org.tcudjoe.weas.practice.service.FraudDetector.findLimitViolators;
 
 
 public class Main {

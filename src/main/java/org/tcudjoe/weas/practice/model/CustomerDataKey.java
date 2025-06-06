@@ -1,7 +1,6 @@
-package org.tcudjoe.weasPractice.model;
+package org.tcudjoe.weas.practice.model;
 
 import java.time.LocalDate;
-import java.util.Objects;
 
 public record CustomerDataKey(String customerId, LocalDate date) {
 

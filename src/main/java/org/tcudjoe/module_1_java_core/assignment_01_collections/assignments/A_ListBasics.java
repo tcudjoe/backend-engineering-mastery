@@ -2,6 +2,7 @@ package org.tcudjoe.module_1_java_core.assignment_01_collections.assignments;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -22,8 +23,6 @@ public class A_ListBasics {
 			try {
 				listOfNames.add(name);
 				System.out.println("Name added to list: " + name);
-			} catch (NullPointerException nexc) {
-				throw new NullPointerException();
 			} catch (Exception exc) {
 				throw new Exception("An exception occured while trying to add a name to the list: ", exc);
 			}
@@ -41,19 +40,17 @@ public class A_ListBasics {
 		return listOfNames;
 	}
 
-	public String getNameByIndex(int index) {
-		String name = listOfNames.get(index);
+	public void getNameByIndex(int index) {
 
 		if (index >= 0 && index < listOfNames.size()) {
+			String name = listOfNames.get(index);
 
 			System.out.println("Name: " + name + ", at index: " + index + ", returned.");
-			return name;
 		} else {
 
 			System.out.println("Index does not exist.");
 		}
 
-		return name;
 	}
 
 	public void setName(int index, String name) {
@@ -82,7 +79,10 @@ public class A_ListBasics {
 	}
 
 	public void removeNameByName(String nameToRemove) {
-		for (String name : listOfNames) {
+		Iterator<String> iterator = listOfNames.iterator();
+		while (iterator.hasNext()) {
+			String name = iterator.next();
+
 			if (name.equalsIgnoreCase(nameToRemove)) {
 
 				listOfNames.remove(name);

@@ -80,6 +80,7 @@ public class A_ListBasics {
 
 	public void removeNameByName(String nameToRemove) {
 		Iterator<String> iterator = listOfNames.iterator();
+
 		while (iterator.hasNext()) {
 			String name = iterator.next();
 
@@ -95,5 +96,13 @@ public class A_ListBasics {
 				System.out.println("Name doesnt exist");
 			}
 		}
+	}
+
+	public List<String> sortListAlphabetically() {
+		Collections.sort(listOfNames);
+
+		System.out.println("Sorted list alphabetically: " + listOfNames);
+
+		return listOfNames;
 	}
 }

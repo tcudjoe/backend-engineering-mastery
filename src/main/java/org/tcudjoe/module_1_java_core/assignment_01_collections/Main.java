@@ -32,6 +32,7 @@ public class Main {
 		listBasics.removeNameByIndex(1);
 		listBasics.removeNameByName("ira");
 
+		// Sort names alphabetically
 		listBasics.sortListAlphabetically();
 	}
 }

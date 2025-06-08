@@ -17,6 +17,12 @@ public class A_ListBasics {
 
 	List<String> listOfNames = new ArrayList<>();
 
+	/**
+	 * This method adds a name to a list if it is null or empty
+	 *
+	 * @param name
+	 * @throws Exception
+	 */
 	public void addNameToList(String name) throws Exception {
 
 		if (name != null && !name.isEmpty()) {
@@ -29,6 +35,12 @@ public class A_ListBasics {
 		}
 	}
 
+	/**
+	 * This method gets the full list of all the names
+	 *
+	 * @return
+	 */
+
 	public List<String> getListOfAllNames() {
 		if (listOfNames.isEmpty()) {
 			System.out.println("List of names is empty");
@@ -40,6 +52,11 @@ public class A_ListBasics {
 		return listOfNames;
 	}
 
+	/**
+	 * This method gets a single name by index
+	 *
+	 * @param index
+	 */
 	public void getNameByIndex(int index) {
 
 		if (index >= 0 && index < listOfNames.size()) {
@@ -53,6 +70,13 @@ public class A_ListBasics {
 
 	}
 
+	/**
+	 * This method replaces a name by id.
+	 * It takes the index as a parameter and a name to replace the name at the index with.
+	 *
+	 * @param index
+	 * @param name
+	 */
 	public void setName(int index, String name) {
 		if (index >= 0 && index < listOfNames.size()) {
 			listOfNames.set(index, name);
@@ -66,18 +90,32 @@ public class A_ListBasics {
 
 	}
 
-	public void removeNameByIndex(int index) {
+	/**
+	 * This method removes a name from the list by its index
+	 *
+	 * @param index
+	 * @return
+	 */
+	public boolean removeNameByIndex(int index) {
 		if (index >= 0 && index < listOfNames.size()) {
 			listOfNames.remove(index);
 
 			System.out.println("Name with index: " + index + " successfully removed.");
 			System.out.println("Full list of names without deleted name: " + listOfNames);
+
+			return true;
 		} else {
 
 			System.out.println("Index does not exist.");
 		}
+		return false;
 	}
 
+	/**
+	 * This method removes a name from the list by its name ignoring capitalcase
+	 *
+	 * @param nameToRemove
+	 */
 	public void removeNameByName(String nameToRemove) {
 		Iterator<String> iterator = listOfNames.iterator();
 
@@ -86,7 +124,7 @@ public class A_ListBasics {
 
 			if (name.equalsIgnoreCase(nameToRemove)) {
 
-				listOfNames.remove(name);
+				iterator.remove();
 
 				System.out.println(name + ", was successfully removed.");
 				System.out.println("Full list of names without deleted name: " + listOfNames);
@@ -98,6 +136,11 @@ public class A_ListBasics {
 		}
 	}
 
+	/**
+	 * This method sorts the list alphabetically.
+	 *
+	 * @return
+	 */
 	public List<String> sortListAlphabetically() {
 		Collections.sort(listOfNames);
 

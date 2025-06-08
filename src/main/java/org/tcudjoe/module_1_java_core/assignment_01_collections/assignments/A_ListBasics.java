@@ -18,7 +18,7 @@ public class A_ListBasics {
 	List<String> listOfNames = new ArrayList<>();
 
 	/**
-	 * This method adds a name to a list if it is null or empty
+	 * This method adds a name to a list if it is not null or empty
 	 *
 	 * @param name
 	 * @throws Exception

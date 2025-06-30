@@ -1,5 +1,7 @@
 package org.tcudjoe.module_1_java_core.assignment_01_collections.assignments;
 
+import java.util.HashSet;
+
 /**
  * Create & Use Sets
  * <p>
@@ -9,4 +11,17 @@ package org.tcudjoe.module_1_java_core.assignment_01_collections.assignments;
  * - Sort a `Set` using a `TreeSet`
  */
 public class B_SetBasics {
+
+	HashSet<Integer> listOfIds = new HashSet<>();
+
+	public void addIdToList(int id) {
+		if (id >= 0) {
+			try {
+				listOfIds.add(id);
+				System.out.println("Id added: " + id);
+			} catch (NumberFormatException nfexc) {
+				nfexc.getMessage();
+			}
+		}
+	}
 }

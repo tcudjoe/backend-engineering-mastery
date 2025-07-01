@@ -3,6 +3,9 @@ package org.tcudjoe.module_1_java_core.assignment_01_collections;
 import org.tcudjoe.module_1_java_core.assignment_01_collections.assignments.A_ListBasics;
 import org.tcudjoe.module_1_java_core.assignment_01_collections.assignments.B_SetBasics;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
 
@@ -56,5 +59,20 @@ public class Main {
 		setBasics.addIdToList(-10);
 		setBasics.addIdToList(1599);
 		setBasics.addIdToList(302660);
+
+		//Convert list to set
+		List<Integer> listToConvert = new ArrayList<>();
+
+		listToConvert.add(10);
+		listToConvert.add(100);
+		listToConvert.add(17);
+		listToConvert.add(1);
+		listToConvert.add(84);
+		listToConvert.add(10);
+		listToConvert.add(5);
+		listToConvert.add(97);
+		listToConvert.add(7);
+
+		setBasics.convertListToSet(listToConvert);
 	}
 }

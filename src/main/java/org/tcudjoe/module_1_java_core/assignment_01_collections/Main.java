@@ -4,7 +4,9 @@ import org.tcudjoe.module_1_java_core.assignment_01_collections.assignments.A_Li
 import org.tcudjoe.module_1_java_core.assignment_01_collections.assignments.B_SetBasics;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Main {
 
@@ -74,5 +76,25 @@ public class Main {
 		listToConvert.add(7);
 
 		setBasics.convertListToSet(listToConvert);
+
+		// Sort set with Treeset
+		Set<Integer> setToSort = new HashSet<>();
+
+		setToSort.add(5);
+		setToSort.add(1);
+		setToSort.add(1);
+		setToSort.add(1000);
+		setToSort.add(198);
+		setToSort.add(7);
+		setToSort.add(50);
+		setToSort.add(8);
+		setToSort.add(1);
+		setToSort.add(978);
+		setToSort.add(645);
+		setToSort.add(312);
+		setToSort.add(12);
+		setToSort.add(3);
+
+		setBasics.sortSetWithTreeSet(setToSort);
 	}
 }

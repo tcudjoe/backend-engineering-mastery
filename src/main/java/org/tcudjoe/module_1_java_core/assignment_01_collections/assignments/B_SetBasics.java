@@ -1,8 +1,6 @@
 package org.tcudjoe.module_1_java_core.assignment_01_collections.assignments;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -40,5 +38,14 @@ public class B_SetBasics {
 			}
 		}
 		return new HashSet<>();
+	}
+
+	public Set<Integer> sortSetWithTreeSet(Set<Integer> setToSort) {
+		Set<Integer> setList = new TreeSet<>(Comparator.comparing(Integer::intValue));
+
+		setList.addAll(setToSort);
+		System.out.println("Set after sorting with treeset: " + setList);
+
+		return setToSort;
 	}
 }

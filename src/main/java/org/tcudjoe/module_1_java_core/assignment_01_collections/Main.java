@@ -2,6 +2,7 @@ package org.tcudjoe.module_1_java_core.assignment_01_collections;
 
 import org.tcudjoe.module_1_java_core.assignment_01_collections.assignments.A_ListBasics;
 import org.tcudjoe.module_1_java_core.assignment_01_collections.assignments.B_SetBasics;
+import org.tcudjoe.module_1_java_core.assignment_01_collections.assignments.C_MapBasics;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -96,5 +97,16 @@ public class Main {
 		setToSort.add(3);
 
 		setBasics.sortSetWithTreeSet(setToSort);
+
+		// map basics
+		C_MapBasics mapBasics = new C_MapBasics();
+
+		mapBasics.addToHashMap("SHOES", 20);
+		mapBasics.addToHashMap("SHIRTS", 20);
+		mapBasics.addToHashMap("SHOES", 99);
+		mapBasics.addToHashMap("TENNISRACKET", 80);
+		mapBasics.addToHashMap("MOUSE", 2);
+		mapBasics.addToHashMap("KEYBOARD", 10);
+		mapBasics.addToHashMap("CAMERA", 2030);
 	}
 }

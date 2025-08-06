@@ -1,3 +1,5 @@
+package org.tcudjoe.module_1_java_core.assignment_01_collections
+
 plugins {
     id 'java'
 }

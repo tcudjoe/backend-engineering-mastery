@@ -28,33 +28,29 @@ Combined, these tools empower you to transform and filter data pipelines efficie
 
 ### 🔹 filter()
 
-Filters elements based on a Predicate.
-
-Example: Filter students with a grade > 7.
+- Filters elements based on a Predicate.
+    - Example: Filter students with a grade > 7.
 
 ### 🔹 map()
 
-Transforms each element to another form.
-
-Example: Convert names to uppercase.
+- Transforms each element to another form.
+    - Example: Convert names to uppercase.
 
 ### 🔹 reduce()
 
-Aggregates elements into a single result.
+- Aggregates elements into a single result.
 
-Example: Compute sum or average of grades.
+    - Example: Compute sum or average of grades.
 
 ### 🔹 collect()
 
-Terminal operation that converts streams to collections.
-
-Example: Collect a list of filtered students.
+- Terminal operation that converts streams to collections.
+    - Example: Collect a list of filtered students.
 
 ### 🔹 Optional<T>
 
-A container that may or may not contain a non-null value.
-
-Prevents NullPointerExceptions.
+- A container that may or may not contain a non-null value.
+    - Prevents NullPointerExceptions.
 
 --- 
 

@@ -1,8 +1,5 @@
 package org.tcudjoe.module_1_java_core.assignment_01_collections.assignments;
 
-import java.util.*;
-import java.util.stream.Collectors;
-
 /**
  * Create & Use Sets
  * <p>
@@ -13,39 +10,4 @@ import java.util.stream.Collectors;
  */
 public class B_SetBasics {
 
-	HashSet<Integer> listOfIds = new HashSet<>();
-
-	public void addIdToList(int id) {
-		if (id >= 0) {
-			try {
-				listOfIds.add(id);
-				System.out.println("Id added: " + id);
-			} catch (NumberFormatException nfexc) {
-				nfexc.getMessage();
-			}
-		}
-	}
-
-	public Set<Integer> convertListToSet(List<Integer> listToConvert) {
-		if (!listToConvert.isEmpty()) {
-			try {
-				System.out.println("list before converted to set: " + listToConvert);
-				System.out.println("list after converted to set: " + listToConvert.stream().collect(Collectors.toSet()));
-
-				return listToConvert.stream().collect(Collectors.toSet());
-			} catch (NumberFormatException nfexc) {
-				nfexc.getMessage();
-			}
-		}
-		return new HashSet<>();
-	}
-
-	public Set<Integer> sortSetWithTreeSet(Set<Integer> setToSort) {
-		Set<Integer> setList = new TreeSet<>(Comparator.comparing(Integer::intValue));
-
-		setList.addAll(setToSort);
-		System.out.println("Set after sorting with treeset: " + setList);
-
-		return setToSort;
-	}
 }

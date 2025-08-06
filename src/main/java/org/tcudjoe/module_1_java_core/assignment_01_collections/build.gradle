@@ -7,7 +7,7 @@ version = '1.0-SNAPSHOT'
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(17) // Change to 8, 11, 21 as needed
+        languageVersion = JavaLanguageVersion.of(17)
     }
 }
 

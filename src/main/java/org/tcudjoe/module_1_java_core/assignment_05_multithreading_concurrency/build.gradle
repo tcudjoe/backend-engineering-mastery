@@ -1,0 +1,26 @@
+package org.tcudjoe.module_1_java_core.assignment_05_multithreading_concurrency
+
+plugins {
+    id 'java'
+}
+
+group = 'org.tcudjoe'
+version = '1.0-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+}
+
+test {
+    useJUnitPlatform()
+}

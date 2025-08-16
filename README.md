@@ -55,7 +55,7 @@ professional standards.
 
 2. **Clone your fork locally**
    ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
+   git clone https://github.com/<your-username>/backend-engineering-mastery.git
    cd <repo-name>
 
 3. **Open in your IDE**

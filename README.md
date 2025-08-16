@@ -55,7 +55,7 @@ professional standards.
 
 2. **Clone your fork locally**
    ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
+   git clone https://github.com/<your-username>/backend-engineering-mastery.git
    cd <repo-name>
 
 3. **Open in your IDE**
@@ -68,9 +68,10 @@ professional standards.
         - `tests/` — Optional unit tests to validate your work
 
 5. **Commit your progress**
-   ``git add .
-git commit -m "Complete Module 01 - Assignment 01"
-git push origin main``
+   ```bash 
+   git add . 
+   git commit -m "Complete Module 01 - Assignment 01"
+   git push origin main
 
 ---
 

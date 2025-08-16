@@ -68,9 +68,10 @@ professional standards.
         - `tests/` — Optional unit tests to validate your work
 
 5. **Commit your progress**
-   ``git add .
-git commit -m "Complete Module 01 - Assignment 01"
-git push origin main``
+   ```bash 
+   git add . 
+   git commit -m "Complete Module 01 - Assignment 01"
+   git push origin main
 
 ---
 
